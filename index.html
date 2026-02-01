@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biswajit Pradhan | ML Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F5F5F5; /* Smoky White */
+            color: #1A1A1A;
+        }
+        .project-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            background: #FFFFFF;
+            border: 1px solid #E5E5E5;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="max-w-5xl mx-auto px-6 py-8 flex justify-between items-center">
+        <h1 class="text-xl font-bold tracking-tight">BISWAJIT PRADHAN</h1>
+        <a href="#" target="_blank" class="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors">
+            Download Resume
+        </a>
+    </nav>
+
+    <header class="max-w-5xl mx-auto px-6 pt-16 pb-24">
+        <div class="max-w-3xl">
+            <p class="text-gray-500 font-medium mb-4 uppercase tracking-widest text-xs">Computer Science @ GCE Keonjhar • JNV Alumnus</p>
+            <h2 class="text-5xl md:text-6xl font-bold leading-tight mb-8">
+                Building Intelligent Systems through <span class="text-gray-400 text-underline">Reverse Engineering</span>.
+            </h2>
+            <p class="text-xl text-gray-600 leading-relaxed mb-10">
+                3rd Year CS Student focused on Machine Learning. I specialize in bridging the gap between complex AI research and production-ready applications. Currently seeking a **Paid ML Internship**.
+            </p>
+            <div class="flex gap-4">
+                <a href="#projects" class="border-b-2 border-black pb-1 font-semibold hover:text-gray-500 hover:border-gray-500 transition-all">View Projects</a>
+                <span class="text-gray-300">/</span>
+                <a href="https://linkedin.com" class="border-b-2 border-black pb-1 font-semibold hover:text-gray-500 hover:border-gray-500 transition-all">LinkedIn</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="projects" class="max-w-5xl mx-auto px-6 py-20 border-t border-gray-200">
+        <div class="flex justify-between items-end mb-12">
+            <div>
+                <h3 class="text-2xl font-bold">Reverse Engineered Projects</h3>
+                <p class="text-gray-500 mt-2">Deep dives into architecture and optimization.</p>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <div class="project-card p-8 rounded-xl">
+                <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Computer Vision</span>
+                <h4 class="text-2xl font-bold mt-2 mb-4">Edge-Optimized YOLOv8 Implementation</h4>
+                <p class="text-gray-600 mb-6">
+                    Reverse-engineering the YOLOv8 architecture to optimize for edge devices. Focus on quantization and pruning to maintain mAP while reducing latency on mobile hardware.
+                </p>
+                <div class="flex gap-3 mb-6 flex-wrap">
+                    <span class="bg-gray-100 px-3 py-1 rounded text-xs font-medium">PyTorch</span>
+                    <span class="bg-gray-100 px-3 py-1 rounded text-xs font-medium">ONNX</span>
+                    <span class="bg-gray-100 px-3 py-1 rounded text-xs font-medium">OpenCV</span>
+                </div>
+                <a href="#" class="text-sm font-bold inline-flex items-center group">
+                    Live Demo Coming Soon 
+                    <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+
+            <div class="project-card p-8 rounded-xl">
+                <span class="text-xs font-bold text-green-600 uppercase tracking-widest">Natural Language Processing</span>
+                <h4 class="text-2xl font-bold mt-2 mb-4">Transformer Scratch Replication</h4>
+                <p class="text-gray-600 mb-6">
+                    Building the "Attention is All You Need" architecture from the ground up. Implementing multi-head attention and positional encoding without high-level library abstractions.
+                </p>
+                <div class="flex gap-3 mb-6 flex-wrap">
+                    <span class="bg-gray-100 px-3 py-1 rounded text-xs font-medium">NumPy</span>
+                    <span class="bg-gray-100 px-3 py-1 rounded text-xs font-medium">TensorFlow</span>
+                    <span class="bg-gray-100 px-3 py-1 rounded text-xs font-medium">Research Paper Analysis</span>
+                </div>
+                <a href="#" class="text-sm font-bold inline-flex items-center group">
+                    Architecture Docs Coming Soon 
+                    <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+
+            <div class="project-card p-8 rounded-xl">
+                <span class="text-xs font-bold text-purple-600 uppercase tracking-widest">MLOps & Full Stack</span>
+                <h4 class="text-2xl font-bold mt-2 mb-4">Django-ML Deployment Pipeline</h4>
+                <p class="text-gray-600 mb-6">
+                    A full-stack application that handles real-time data ingestion and model inference. Features a Django backend to serve a scikit-learn predictive model via REST API.
+                </p>
+                <div class="flex gap-3 mb-6 flex-wrap">
+                    <span class="bg-gray-100 px-3 py-1 rounded text-xs font-medium">Django</span>
+                    <span class="bg-gray-100 px-3 py-1 rounded text-xs font-medium">Scikit-Learn</span>
+                    <span class="bg-gray-100 px-3 py-1 rounded text-xs font-medium">Docker</span>
+                </div>
+                <a href="#" class="text-sm font-bold inline-flex items-center group">
+                    Repository Coming Soon 
+                    <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="max-w-5xl mx-auto px-6 py-20 text-center border-t border-gray-200">
+        <p class="text-gray-400 text-sm mb-4">Currently in 3rd Year @ GCE Keonjhar</p>
+        <p class="text-lg font-medium">Let's build something intelligent.</p>
+        <div class="mt-8 flex justify-center gap-6 text-gray-500">
+            <a href="#" class="hover:text-black">GitHub</a>
+            <a href="#" class="hover:text-black">LinkedIn</a>
+            <a href="mailto:your-email@example.com" class="hover:text-black">Email</a>
+        </div>
+    </footer>
+
+</body>
+</html>
